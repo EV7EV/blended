@@ -19,6 +19,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 button {
   cursor: pointer;
 }
@@ -108,11 +112,19 @@ ul {
 /* Hero */
 
 .section-hero {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 367px;
   text-align: center;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top, center;
   background-color: var(--background-color-hero);
 }
+
+/* .section-hero .container {
+} */
 
 .hero-title {
   font-weight: 400;
@@ -149,6 +161,13 @@ ul {
 .hero-btn:focus {
   border-color: var(--button-background);
   color: var(--button-background);
+}
+
+.hero-img {
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .amazon-section {
@@ -192,6 +211,8 @@ ul {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid var(--main-textc);
+  /* padding-top: 17px;
+  padding-bottom: 21px; */
 }
 
 .amazon-title {
@@ -212,10 +233,9 @@ ul {
   font-size: 14px;
   line-height: calc(14 / 14);
   background-color: var(--button-background);
+  text-transform: uppercase;
   padding-top: 17px;
   padding-bottom: 21px;
-  padding-left: 37px;
-  padding-right: 37px;
   border: 1px solid transparent;
   cursor: pointer;
   color: var(--light-text);
@@ -241,6 +261,10 @@ ul {
   padding-bottom: 80px;
   background-color: var(--main-textc);
   color: var(--light-text);
+  background-image: url("../img/wifi-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .wifi-list {
@@ -304,4 +328,208 @@ ul {
   color: var(--light-text);
   border-color: var(--light-text);
   text-transform: uppercase;
+}
+
+.wall-street-section {
+  background-color: var(--main-textc);
+  padding: 200px;
+}
+
+.wall-street__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  color: var(--mainbg);
+  text-align: center;
+  width: 823px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+.wall-street__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.potentian-section {
+  background-image: url("../img/unlock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 168px;
+  padding-bottom: 149px;
+}
+
+.icon-items {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  margin-bottom: 56px;
+}
+
+.potention-title {
+  margin-bottom: 44px;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  color: var(--light-text);
+}
+
+.potention-text {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  color: var(--light-text);
+  width: 734px;
+  margin: 0 auto;
+  margin-bottom: 118px;
+}
+
+.potention-btn {
+  font-size: 14px;
+  line-height: calc(14 / 14);
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  padding: 17px 66px 21px 65px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  color: var(--light-text);
+  background-color: var(--button-background);
+}
+
+.connectivity-section {
+  padding-top: 135px;
+  padding-bottom: 120px;
+}
+
+.connectivity-title {
+  width: 782px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  color: var(--main-textc);
+}
+
+.connectivity-text {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  width: 707px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  color: var(--main-textc);
+}
+
+.connectivity-img {
+  margin: 0 auto;
+}
+
+.home-section {
+  background-color: var(--background-header);
+  padding-top: 117px;
+  padding-bottom: 124px;
+  color: var(--light-text);
+}
+
+.home-title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.home-text {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  width: 710px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+.home-btn {
+  font-size: 14px;
+  line-height: calc(14 / 14);
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  padding: 17px 43px 21px 43px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+  border: none;
+  color: var(--light-text);
+  background-color: var(--button-background);
+}
+
+.home-img {
+  margin: 0 auto;
+}
+
+/* About */
+
+.about-section {
+  padding-top: 116px;
+  padding-bottom: 119px;
+}
+
+.about-main-title {
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  margin-bottom: 83px;
+  color: var(--main-textc);
+}
+
+.about-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 167px;
+}
+
+.about-title {
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: calc(24 / 21);
+  margin-bottom: 17px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+}
+
+.about-item {
+  height: 427px;
+  width: 231px;
+}
+.about-btn {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--main-textc);
+  padding-bottom: 5px;
+}
+
+.about-icon {
+  display: block;
+  margin-right: auto;
+}
+
+.touchid {
+  margin-top: 75px;
+}
+
+.protect {
+  margin-top: 26px;
+}
+
+.revers {
+  margin-top: 102px;
 }
